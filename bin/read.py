@@ -4,4 +4,7 @@ import numpy as np
 def read():
     with open('data/subsetonelaptops.csv') as laptopsdata:
         laptops = laptopsdata.read().splitlines()
-    return laptops
+        laptopsheader = laptops[0]
+        laptops = laptops[1:]
+        laptopsarray = np.array(laptops)
+    return laptopsarray
