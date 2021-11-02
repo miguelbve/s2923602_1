@@ -1,5 +1,5 @@
 from bin import read
-
+from bin import menu
 
 # This is a sample Python script.
 
@@ -9,6 +9,7 @@ from bin import read
 
 def main():
     laptops = read.read()
+    menu.start()
 
 
 # Press the green button in the gutter to run the script.
